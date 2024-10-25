@@ -1,5 +1,9 @@
 def calcular_inss(salario_bruto):
 
+    """
+    Função para calcular o desconto do inss do trabalhador.
+    """
+    """
     if salario_bruto <= 1412:
         inss = salario_bruto*0.075
     elif salario_bruto > 1412 and salario_bruto <= 2666.68:
@@ -29,6 +33,5 @@ def calcular_ir(salario_bruto):
     elif salario_descontado > 3751.05 and salario_descontado <= 4664.68:
         ir = salario_descontado*0.225 - 662.77
     else:
-        ir = salario_descontado*0.275 - 896.00
     
     return round(ir,2)
